@@ -15,4 +15,5 @@ gem 'guard'
 group :jekyll_plugins do
   gem 'jekyll-livereload'
   gem 'jekyll-haml'
+  gem 'jekyll-admin'
 end
