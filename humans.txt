@@ -1,0 +1,11 @@
+---
+---
+
+Designer:     Your Name
+Twitter:      @...
+Location:
+
+Last updated: {{ site.time }}
+Language:     English
+Built with:   Jekyll {{ jekyll.version }} <http://jekyllrb.com>
+              Adobe Creative Suite

@@ -6,40 +6,115 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 
+# Site Settings
+locale                   : "en-US"
+title                    : "Title"
+title_separator          : "-"
+name                     : &name "your name"
+description              : &description "Website description"
+url                      : http://blog.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+# repository               : ""
+# teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
+# words_per_minute         : 200
 
-# Site settings
-title: blog
-description: "blog description"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: http://blog.com
+
+
+# SEO Related
+google_site_verification : ""
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
 
 
 
-# Site Owner
-owner:
-  name: "Your Name"
-  email: "youremail@email.com"
+# Analytics
+analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    analytics:
-    verify:
-  big:
-    verify:
-  alexa:
-    verify:
-  yandex:
-    verify:
-  bio: bio"
-  avatar:
+    tracking_id          : "UA-2011187-3"
 
 
 
-# Jekyll config
-markdown: kramdown
+# Site Author
+author:
+  name             : *name
+  avatar           :
+  bio              : "Just another boring, tattooed, time traveling, designer."
+  location         :
+  email            :
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+
+
+
+# Reading Files
 include:
   - _pages
+exclude:
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-exclude: [Gemfile, Gemfile.lock]
 
+
+# Conversion
+markdown: kramdown
+# highlighter: rouge
+# lsi: false
+# excerpt_separator: "\n\n"
+# incremental: false
+
+
+
+# Markdown Processing
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   smart_quotes: lsquo,rsquo,ldquo,rdquo
+#   enable_coderay: false
 
 
 # Collectsions
@@ -82,8 +157,22 @@ assets:
   autoprefixer:
     browsers: ["last 2 versions","> 5%","IE 9"]
 
+
+
+# Plugins
 gems:
   - jekyll-assets
+
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+# compress_html:
+#   clippings: all
+#   ignore:
+#     envs: development
+
+
 
 # Server Config options
 livereload: true     # You no longer need to include --livereload
