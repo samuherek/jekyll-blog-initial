@@ -1,12 +1,11 @@
 !!!
 %html
-  {% include head.html %}
+  {% haml base/head.haml %}
 
   %body
-    {% include header.html %}
 
     .page-content
       .wrapper
         {{ content }}
 
-    {% include footer.html %}
+    {% haml base/footer.haml %}
