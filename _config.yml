@@ -142,6 +142,7 @@ defaults:
       type: posts
     values:
       layout: project
+      permalink: /:title/
 
 
 
