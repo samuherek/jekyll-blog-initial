@@ -5,17 +5,81 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
-# Build settings
+
+# Site settings
+title: blog
+description: "blog description"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://blog.com
+
+
+
+# Site Owner
+owner:
+  name: "Your Name"
+  email: "youremail@email.com"
+  google:
+    analytics:
+    verify:
+  big:
+    verify:
+  alexa:
+    verify:
+  yandex:
+    verify:
+  bio: bio"
+  avatar:
+
+
+
+# Jekyll config
 markdown: kramdown
+include:
+  - _pages
+
+
+
+# Collectsions
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+
+
+# Defaults
+
+defaults:
+
+  # Pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: default
+
+  # Projects
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: project
+
+
+
+# Jakyll assets
+assets:
+  # debug: false
+  # css_compressor: sass
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+
+
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+# reload_port: 5678    # If you don't want to use the default port
