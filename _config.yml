@@ -38,6 +38,8 @@ markdown: kramdown
 include:
   - _pages
 
+exclude: [Gemfile, Gemfile.lock]
+
 
 
 # Collectsions
@@ -73,12 +75,15 @@ assets:
   # debug: false
   # css_compressor: sass
   sources:
+    - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/fonts
   autoprefixer:
     browsers: ["last 2 versions","> 5%","IE 9"]
 
-
+gems:
+  - jekyll-assets
 
 # Server Config options
 livereload: true     # You no longer need to include --livereload
