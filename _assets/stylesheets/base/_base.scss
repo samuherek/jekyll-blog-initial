@@ -1,5 +1,109 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+// Variables
+//------------------------------------------------------
+$font-stack:                            'Open Sans', Arial, sans-serif;
+$font-size:                             1rem;
+
+// $body-background:                       $white-color;
+// $body-font-color:                       $dark-color;
+
+// $selection-background-color:            ;
+// $selection-text-color:                  ;
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("base") {
+
+    // 1. Boilerplate first
+    // 2. Custom styles after boilerplate
+
+
+    // Ressetings and configuring box-sizing
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    // NOTE
+    // html is set to 62.5% so that all the REM measurements
+    // throughout Skeleton are based on 10px sizing.
+    // So basically 1.5rem = 15px :)
+
+    html {
+        height: 100%;
+        font-size: 100%;
+    }
+
+    body {
+    	margin: 0 auto;
+    	min-height: 100%;
+        position: relative;
+        //    color: $body-font-color;
+        //    background: $body-background;
+    }
+
+    // Fonts settings based on the 100E2R standard: http://www.informationarchitects.jp/en/100e2r/
+    body, button, input, select, textarea {
+    	font: 1rem/1.625 Georgia, serif;
+    	color: #222; // Full black on white is too much contrast, #222 is a better default
+    }
+
+
+    // Add and/or remove tags as your baseline grid needs
+    p,
+    blockquote,
+    q,
+    pre,
+    address,
+    hr,
+    code,
+    samp,
+    dl,
+    ol,
+    ul,
+    form,
+    table,
+    fieldset,
+    menu,
+    h4,
+    h5,
+    h6,
+    img,
+    figure,
+    figcaption,
+    button,
+    hr {
+    	margin: 0 0 1.625rem;
+    }
+
+    button, input, select, textarea {
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+
+    // Remove text-shadow in selection highlight: h5bp.com/i
+    // These selection rule sets have to be separate.
+    // Customize the background color to match your design.
+
+    ::-moz-selection {
+    //    background: $selection-background-color;
+    //    color: $selection-text-color;
+    }
+
+    ::selection {
+    //    background: $selection-background-color;
+    //    color: $selection-text-color;
+    }
+
+    hr {
+        border: none;
+        background-color: #eee;
+        color: #eee;
+        height: 1px;
+        margin: 2.5rem 0;
+    }
+
 }

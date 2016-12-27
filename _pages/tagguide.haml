@@ -1,0 +1,529 @@
+---
+layout: default
+title: Tag Guide
+permalink: /tagguide/
+---
+
+%h1 Javascript Tags We Can Create
+
+%a{href: '#'}
+
+%hr
+
+%abbr
+
+%address
+
+%area
+
+%article
+
+%aside
+
+%audio
+
+%b
+
+%base
+
+%bdo
+
+%blockquote
+
+%body
+
+%br
+
+%button
+
+%canvas
+
+%caption
+
+%cite
+
+%code
+
+%colgroup
+
+%datalist
+
+%dd
+
+%del
+
+%details
+
+%dfn
+
+%dialog
+
+%div
+
+%dl
+
+%dt
+
+%em
+
+%embed
+
+%fieldset
+
+%figcaption
+
+%figure
+
+%footer
+
+%form
+
+%head
+
+%header
+
+%h1
+
+%h2
+
+%h4
+
+%h5
+
+%h6
+
+%hr
+
+%html
+
+%i
+
+%iframe
+
+%img
+
+%ins
+
+%input{type: 'button'}
+
+%input{type: 'checkbox'}
+%input{type: 'color'}
+%input{type: 'date'}
+%input{type: 'datetime'}
+%input{type: 'datetime'}
+%input{type: 'email'}
+%input{type: 'file'}
+%input{type: 'hidden'}
+%input{type: 'image'}
+%input{type: 'month'}
+%input{type: 'number'}
+%input{type: 'password'}
+%input{type: 'radio'}
+%input{type: 'range'}
+%input{type: 'reset'}
+%input{type: 'search'}
+%input{type: 'submit'}
+%input{type: 'text'}
+%input{type: 'time'}
+%input{type: 'url'}
+%input{type: 'week'}
+
+%kbd
+
+%keygen
+
+%label
+
+%legend
+
+%li
+
+%link
+
+%map
+
+%mark
+
+%menu
+
+%menuitem
+
+%meta
+
+%meter
+
+%nav
+
+%object
+
+%ol
+
+%optgroup
+
+%option
+
+%output
+
+%p
+
+%param
+
+%pre
+
+%progress
+
+%q
+
+%s
+
+%samp
+
+%script
+
+%section
+
+%select
+
+%small
+
+%source
+
+%span
+
+%strong
+
+%style
+
+%sub
+
+%summary
+
+%sup
+
+%table
+
+%td
+
+%th
+
+%tr
+
+%textarea
+
+%time
+
+%title
+
+%track
+
+%u
+
+%ul
+
+%var
+
+%video
+
+
+%hr
+%hr
+%hr
+%hr
+
+%h3 %a
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+%pre
+  %code
+    &lt;a href="http://www.w3schools.com">Visit W3Schools.com!&lt;/a>
+
+%h3 %abbr
+The <abbr> tag defines an abbreviation or an acronym, like "Mr.", "Dec.", "ASAP", "ATM".
+
+Tip: An abbreviation and an acronym are both shortened versions of something else. Both are often represented as a series of letters.
+
+Marking up abbreviations can give useful information to browsers, translation systems and search-engines.
+%pre
+  %code
+    The &lt;abbr title="World Health Organization">WHO&lt;/abbr> was founded in 1948.
+
+%hr
+
+%h3 %acronym
+The <acronym> tag is not supported in HTML5. Use the <abbr> tag instead.
+
+The <acronym> tag defines an acronym.
+
+An acronym must spell out another word. For example: NASA, ASAP, GUI.
+
+Marking up acronyms can give useful information to browsers, translation systems and search-engines.
+%pre
+  %code
+    Can I get this &lt;acronym title="as soon as possible">ASAP&lt;/acronym>?
+
+%hr
+
+%h3 %address
+The <address> tag defines the contact information for the author/owner of a document or an article.
+
+If the <address> element is inside the <body> element, it represents contact information for the document.
+
+If the <address> element is inside an <article> element, it represents contact information for that article.
+
+The text in the <address> element usually renders in italic. Most browsers will add a line break before and after the address element.
+%pre
+  %code
+    &lt;address>
+    Written by &lt;a href="mailto:webmaster@example.com">Jon Doe&lt;/a>.&lt;br>
+    Visit us at:&lt;br>
+    Example.com&lt;br>
+    Box 564, Disneyland&lt;br>
+    USA
+    &lt;/address>
+
+%hr
+
+%h3 %applet
+The <applet> tag is not supported in HTML5. Use <embed> or <object> instead.
+
+The <applet> tag defines an embedded applet.
+%pre
+  %code
+    &lt;applet code="Bubbles.class" width="350" height="350">
+    Java applet that draws animated bubbles.
+    &lt;/applet>
+
+%hr
+
+%h3 %applet
+The <area> tag defines an area inside an image-map (an image-map is an image with clickable areas).
+
+The <area> element is always nested inside a <map> tag.
+
+Note: The usemap attribute in the <img> tag is associated with the <map> element's name attribute, and creates a relationship between the image and the map.
+%pre
+  %code
+    &lt;img src="planets.gif" width="145" height="126" alt="Planets"
+    usemap="#planetmap">
+    &lt;map name="planetmap">
+    &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+    &lt;area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+    &lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+    &lt;/map>
+
+%hr
+
+%h3 %applet
+The <area> tag defines an area inside an image-map (an image-map is an image with clickable areas).
+
+The <area> element is always nested inside a <map> tag.
+
+Note: The usemap attribute in the <img> tag is associated with the <map> element's name attribute, and creates a relationship between the image and the map.
+%pre
+  %code
+    &lt;img src="planets.gif" width="145" height="126" alt="Planets"
+usemap="#planetmap">
+    &lt;map name="planetmap">
+    &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+    &lt;area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+    &lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+    &lt;/map>
+
+
+&lt;
+
+
+
+%area
+%article
+%aside
+%audio
+%b
+%base
+%basefont
+%bdi
+%bdo
+%big
+%blockquote
+%body
+%br
+%button
+%canvas
+%caption
+%center
+%cite
+%code
+%col
+%colgroup
+%datalist
+%dd
+%del
+%details
+%dfn
+%dialog
+%dir
+%div
+%dl
+%dt
+%em
+%embed
+%fieldset
+%figcaption
+%figure
+%font
+%footer
+%form
+%frame
+%frameset
+%h1
+%head
+%header
+%hr
+%html
+%i
+%iframe
+%img
+%input
+%ins
+%kbd
+%keygen
+%label
+%legend
+%li
+%link
+%main
+%map
+%mark
+%menu
+%menuitem
+%meta
+%meter
+%nav
+%noframes
+%noscript
+%object
+%ol
+%optgroup
+%option
+%output
+%p
+%param
+%pre
+%progress
+%q
+%rp
+%rt
+%ruby
+%s
+%samp
+%script
+%section
+%select
+%small
+%source
+%span
+%strike
+%strong
+%style
+%sub
+%summary
+%sup
+%table
+%tbody
+%td
+%textarea
+%tfoot
+%th
+%thead
+%time
+%title
+%tr
+%track
+%tt
+%u
+%ul
+%var
+%video
+%wbr
+
+
+%hr
+%hr
+%hr
+%hr
+
+
+%h1 This is a title h1
+%h2 This is a title h2
+%h3 This is a title h3
+%h4 This is a title h4
+%h5 This is a title h5
+%h6 This is a title h6
+
+%p Paragraph - Forth. Over very midst isn't god male land. Multiply set divide unto face i unto made given unto. Life fly fruit tree isn't. Itself after after creeping abundantly gathered air.
+
+%blockquote Blockquote - Forth. Over very midst isn't god male land. Multiply set divide unto face i unto made given unto. Life fly fruit tree isn't. Itself after after creeping abundantly gathered air.
+
+%q q - Forth. Over very midst.
+
+%pre pre - Forth. Over very midst isn't god male land. Multiply set divide unto face i unto made given unto. Life fly fruit tree isn't. Itself after after creeping abundantly gathered air.
+
+%address address - Starorhoska 1, Banska Bystrica 97411, Slovakia
+
+%code code - Forth. Over very midst isn't god male land. Multiply set divide unto face i unto made given unto. Life fly fruit tree isn't. Itself after after creeping abundantly gathered air.
+
+%samp samp - Forth. Over very midst isn't god male land. Multiply set divide unto face i unto made given unto. Life fly fruit tree isn't. Itself after after creeping abundantly gathered air.
+
+%dl
+  %dt dt - Lorem ipsum...
+  %dd dd - Lorem ipsum...
+
+%ol
+  %li ol - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  %li ol - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+%ul
+  %li ul - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  %li ul - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+%form
+  %p Fieldset is to group related elements in a form
+  %fieldset
+    %legend Personalia:
+    %input{type: "text"}
+
+%table
+  %thead
+    %tr
+      %th
+        Table head 1
+      %th
+        Table head 2
+      %th
+        Table head 3
+  %tbody
+    %tr
+      %td
+        Table cell 1
+      %td
+        Table cell 2
+      %td
+        Table cell 3
+
+
+%img{src: '#'}
+
+%figure
+  %p Figure
+
+%figcaption
+  %p Figcaption
+
+%hr

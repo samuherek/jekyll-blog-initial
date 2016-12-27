@@ -2,27 +2,21 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
-
-@import
-    'base/base';
-
 // 1. Configuration and helpers
-// @import
-//   'utils/variables',
-//   'utils/extends',
-//   'utils/functions',
-//   'utils/mixins',
-//   'utils/animations';
+@import
+  'utils/globals',
+  'utils/mixins';
+  // 'utils/animations';
 //
 // // 2. Vendors
 // @import
 //   'vendor/normalize';
 //
 // // 3. Base stuff
-// @import
-//   'base/base',
-//   'base/typography',
-//   'base/helpers';
+@import
+  'base/base',
+  'base/typography',
+  'base/helpers';
 //
 // // 4. Layout-related sections
 // @import

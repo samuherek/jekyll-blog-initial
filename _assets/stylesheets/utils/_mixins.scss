@@ -1,0 +1,48 @@
+// Global Mixins
+//------------------------------------------------------
+
+// We use this to loading scss files
+@mixin exports($name) {
+  @if index($modules, $name) {
+  } @else {
+    $modules: append($modules, $name) !global;
+    @content;
+  }
+}
+
+
+// We use this for button theming
+@mixin btn-theme($btn-color) {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    background-image: none;
+    vertical-align: middle;
+    touch-action: manipulation;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-color: $btn-color;
+    background-color: $btn-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: darken($btn-color, 10%);
+        background-color: darken($btn-color, 10%);
+    }
+}
+
+// Clearfix
+
+@mixin clearfix {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}

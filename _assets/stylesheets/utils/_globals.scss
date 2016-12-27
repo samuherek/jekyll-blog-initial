@@ -1,0 +1,93 @@
+// Global Variables
+//------------------------------------------------------
+$modules:                     () !default;
+
+$experimental:                true !default;
+
+// prefix elements
+$prefix-webkit:               true !global;
+$prefix-moz:                  false !global;
+$prefix-spec:                 false !global;
+
+// color elements
+$white:                       #fff !default;
+$black:                       #000 !default;
+
+
+// color elements
+
+$white:                                 #ffffff !default;
+$white-dark:                            #F7F8FA !default;
+
+$blue:                                  #268BD2 !default;
+$blue-dark:                             #227DBC !default;
+// $blue-light:                            !default;
+
+$dark-blue:                             #2B303B !default; // 00
+$dark-blue-dark:                        #20242C !default;
+$dark-blue-light:                       #4b4f58 !default;
+
+$dark-gray:                             #65737e !default; // 03
+$dark-gray-dark:                        #5A6670 !default;
+// $dark-gray-light:                       !default;
+
+$gray:                                  #a7adba !default; // 04
+$gary-dark:                             #99A0AF !default;
+// $gray-light:                            !default;
+
+$light-gray:                            #c0c5ce !default; // 05
+$light-gray-dark:                       #B2B8C3 !default;
+// $light-gray-light:                      !default;
+
+$light-dark-gray:                       #dfe1e8 !default; // 06
+$light-dark-gray-dark:                  #D0D3DD !default;
+// $light-dark-gray-light:                 !default;
+
+$light-light-gray:                      #eff1f5 !default; // 07
+$light-light-gray-dark:                 #DFE3EB !default;
+// $light-light-gray-light:                !default;
+
+
+// old colors
+$bluejeans-dark:              #4A89DC !default;
+$bluejeans-light:             #5D9CEC !default;
+
+$aqua-dark:                   #3BAFDA !default;
+$aqua-light:                  #4FC1E9 !default;
+
+$mint-dark:                   #37BC9B !default;
+$mint-light:                  #48CFAD !default;
+
+$grass-dark:                  #8CC152 !default;
+$grass-light:                 #A0D468 !default;
+
+$sunflower-dark:              #F6BB42 !default;
+$sunflower-light:             #FFCE54 !default;
+
+$bittersweet-dark:            #E9573F !default;
+$bittersweet-light:           #FC6E51 !default;
+
+$grapefruit-dark:             #DA4453 !default;
+$grapefruit-light:            #ED5565 !default;
+
+$lavender-dark:               #967ADC !default;
+$lavender-light:              #AC92EC !default;
+
+$pinkrose-dark:               #D770AD !default;
+$pinkrose-light:              #EC87C0 !default;
+
+$lightgray-dark:              #E6E9ED !default;
+$lightgray-light:             #F5F7FA !default;
+
+$mediumgray-dark:             #AAB2BD !default;
+$mediumgray-light:            #CCD1D9 !default;
+
+$darkgray-dark:               #434A54 !default;
+$darkgray-light:              #656D78 !default;
+
+
+
+// Global layout
+
+$version-height:              3rem;
+$sidebar-width:               12.5rem;
