@@ -8,7 +8,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Title"
+title                    : "Jekyll Blog"
 title_separator          : "-"
 name                     : &name "your name"
 description              : &description "Website description"

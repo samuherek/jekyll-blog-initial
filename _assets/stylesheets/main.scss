@@ -19,20 +19,29 @@
   'base/helpers';
 //
 // // 4. Layout-related sections
-// @import
+@import
+    'layout/layout';
 //   'layout/grid',
 //   'layout/header',
 //   'layout/sections',
 //   'layout/footer';
 //
 // // 5. Components
-// @import
+@import
+    'components/buttons',
+    'components/lists',
+    'components/navbars',
+    'components/modules',
+    'components/navs',
+    'components/excerpts',
+    'components/posts';
 //   'components/buttons',
 //   'components/navigations',
 //   'components/availability';
 
 // 6. Page-specific styles
-// @import
+@import
+    'pages/shared/footer';
 //
 // // 7. Themes
 // @import

@@ -1,0 +1,26 @@
+@import 'utils/globals';
+@import 'utils/mixins';
+
+// Variables
+//------------------------------------------------------
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("excerpts") {
+
+    .jk-excerpt {
+
+    }
+
+    .jk-excerpt-header {
+
+    }
+
+    .jk-excerpt-title {
+        color: $dark;
+    }
+
+}

@@ -1,0 +1,18 @@
+@import 'utils/globals';
+@import 'utils/mixins';
+
+// Variables
+//------------------------------------------------------
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("lists") {
+
+    .jk-list {
+        list-style: none;
+    }
+
+}

@@ -1,13 +1,8 @@
 // Global Variables
 //------------------------------------------------------
 $modules:                     () !default;
-
 $experimental:                true !default;
 
-// prefix elements
-$prefix-webkit:               true !global;
-$prefix-moz:                  false !global;
-$prefix-spec:                 false !global;
 
 // color elements
 $white:                       #fff !default;
@@ -86,8 +81,17 @@ $darkgray-dark:               #434A54 !default;
 $darkgray-light:              #656D78 !default;
 
 
+//-------- temp colors
+$dark: #222;
+$brand: $blue;
+$light: #f0f1f4;
+//--------
 
-// Global layout
 
-$version-height:              3rem;
-$sidebar-width:               12.5rem;
+
+// Media query sizes
+
+$mobile-width:                          31rem;
+$mid-tablet-width:                      50rem;
+$tablet-width:                          62rem;
+$desktop-width:                         75rem;

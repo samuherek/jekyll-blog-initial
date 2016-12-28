@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-
-%article.post{:itemscope => "", :itemtype => "http://schema.org/BlogPosting"}
-  %header.post-header
-    %h1.post-title{:itemprop => "name headline"} {{ page.title }}
-    %p.post-meta
-      %time{:datetime => "{{ page.date | date_to_xmlschema }}", :itemprop => "datePublished"} {{ page.date | date: "%b %-d, %Y" }}
-      {% if page.author %}
-      %span{:itemprop => "author", :itemscope => "", :itemtype => "http://schema.org/Person"}
-        %span{:itemprop => "name"} {{ page.author }}
-      {% endif %}
-  .post-content{:itemprop => "articleBody"}
-    {{ content }}
+%main
+  %article.jk-post{:itemscope => "", :itemtype => "http://schema.org/BlogPosting"}
+    %header.jk-wrapper.jk-post-header
+      %h1{:itemprop => "name headline"} {{ page.title }}
+      .jk-post-meta
+        %p
+          %time{:datetime => "{{ page.date | date_to_xmlschema }}", :itemprop => "datePublished"} {{ page.date | date: "%b %-d, %Y" }}
+          {% if page.author %}
+          %span{:itemprop => "author", :itemscope => "", :itemtype => "http://schema.org/Person"}
+            %span{:itemprop => "name"} {{ page.author }}
+          {% endif %}
+    %section.jk-post-content{:itemprop => "articleBody"}
+      {{ content }}

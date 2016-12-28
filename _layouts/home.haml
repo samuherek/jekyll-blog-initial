@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+%main
+  .jk-wrapper.jk-layout.jk-layout-tight
+    {% for post in site.posts %}
+    %article.jk-layout-third.jk-excerpt
+      %header.jk-excerpt-header
+        %a.jk-excerpt-title{:href => "{{ post.url | prepend: site.baseurl }}"}
+          %h3 {{ post.title }}
+        %span {{ post.date | date: "%b %-d, %Y" }}
+      .jk-excerpt-content
+        %p {{ post.excerpt }}
+    {% endfor %}

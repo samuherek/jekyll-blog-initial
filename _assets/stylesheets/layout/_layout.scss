@@ -1,0 +1,91 @@
+@import 'utils/globals';
+@import 'utils/mixins';
+
+// Variables
+//------------------------------------------------------
+// $sidebar-width:                 30rem;
+// $sidebar-background:            #F5F6F7;
+//
+// $main-background:               #fff;
+
+// Exports
+//------------------------------------------------------
+
+@include exports("layout") {
+
+    .jk-over-wrapper {
+        overflow-x: hidden;
+    }
+
+    .jk-wrapper {
+        position: relative;
+        margin: 0 auto;
+        padding: 0 0.75rem;
+
+        @include mobile-up {
+            width: 90vw;
+            padding: 0 1.5rem;
+        }
+
+        @include big-tablet-up {
+            max-width: 85rem;
+        }
+    }
+
+    .jk-layout {
+        @include clearfix;
+    }
+
+    .jk-layout-tight {
+
+        .jk-layout-full,
+        .jk-layout-half,
+        .jk-layout-third,
+        .jk-layout-fourth,
+        .jk-layout-two-thirds {
+            margin: 0;
+        }
+
+        .jk-layout-half {
+            @include mobile-up {
+                width: 50%;
+            }
+        }
+
+        .jk-layout-third {
+            @include mobile-up {
+                width: 33.33333333334%;
+            }
+        }
+
+        .jk-layout-fourth {
+            @include mobile-up {
+                width: 25%;
+            }
+        }
+
+        // .jk-layout-two-thirds {
+        //     @include mobile-up {
+        //         width: 66.6666666667%;
+        //     }
+        // }
+
+    }
+
+    .jk-layout-full,
+    .jk-layout-half,
+    .jk-layout-third,
+    .jk-layout-fourth {
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+
+    .jk-layout-half,
+    .jk-layout-third,
+    .jk-layout-fourth {
+        @include mobile-up {
+            float: left;
+        }
+    }
+
+}

@@ -39,10 +39,69 @@
 // Clearfix
 
 @mixin clearfix {
-    content: " ";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+// Ellipsis
+@mixin ellipsis($width: 100%) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// 6. Mixins for media queries
+
+@mixin mobile-only {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin mobile-up {
+    @media (min-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin small-tablet {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$mid-tablet-width}) {
+        @content;
+    }
+}
+
+@mixin big-tablet {
+    @media (min-width: #{$mid-tablet-width}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin small-tablet-up {
+    @media (min-width: #{$mid-tablet-width}) {
+        @content;
+    }
+}
+
+@mixin big-tablet-up {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+
+// Transitions
+
+@mixin subtle-transition {
+    transition: all 0.2s ease-in-out;
 }

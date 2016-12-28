@@ -1,11 +1,16 @@
 !!!
 %html
-  {% haml base/head.haml %}
+  %head
+    {% haml shared/head.haml %}
+    {% haml custom/head.haml %}
 
   %body
+    .jk-over-wrapper
 
-    .page-content
-      .wrapper
-        {{ content }}
+      {% haml shared/header.haml %}
 
-    {% haml base/footer.haml %}
+      {{ content }}
+
+      {% haml shared/footer.haml %}
+      {% haml shared/footer-scripts.haml %}
+      {% haml custom/footer.haml %}

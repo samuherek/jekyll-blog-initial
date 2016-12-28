@@ -1,0 +1,120 @@
+@import 'utils/globals';
+@import 'utils/mixins';
+
+// Variables
+//------------------------------------------------------
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("navbars") {
+
+    .jk-navbar {
+        position: relative;
+    }
+
+    .jk-logo-wrapper {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        height: 5rem;
+
+        @include mobile-up {
+            width: 50vw;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: $dark;
+            width: 3rem;
+            margin: 0 auto;
+            height: 0.05rem;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .jk-logo-main {
+        color: $dark;
+
+        h1 {
+            font-size: 1.7rem;
+            line-height: 5rem; // to fit the wrapper hight
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    }
+
+    // Menu trigger button
+
+    .jk-nav-trigger {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: transparent;
+        width: 2rem;
+        height: 2rem;
+        z-index: 101;
+        @include subtle-transition;
+
+        > span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0.15rem;
+            transform: translateY(-50%);
+            background: $dark;
+        }
+
+        > span:before,
+        > span:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $dark;
+            transition: all 0.175s ease-in-out;
+        }
+
+        > span:before {
+            transform: translateY(-0.7rem);
+        }
+
+        > span:after {
+            transform: translateY(0.7rem);
+        }
+
+        // Styling states
+
+        &.is-open {
+            transform: rotate(45deg);
+
+            > span:before,
+            > span:after {
+                transform: rotate(90deg);
+            }
+
+        }
+
+    }
+
+    .jk-navbar {
+
+        .jk-nav {
+            position: absolute;
+            transform: translateX(-150%);
+        }
+    }
+
+}

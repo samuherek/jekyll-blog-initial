@@ -1,0 +1,25 @@
+@import 'utils/globals';
+@import 'utils/mixins';
+
+// Variables
+//------------------------------------------------------
+// $sidebar-width:                 30rem;
+// $sidebar-background:            #F5F6F7;
+//
+// $main-background:               #fff;
+
+// Exports
+//------------------------------------------------------
+
+@include exports("shared-footer") {
+
+    .jk-footer {
+        padding: 2.5rem 0;
+        background: #FAFAFA;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}

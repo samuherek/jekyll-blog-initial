@@ -1,0 +1,30 @@
+@import 'utils/globals';
+@import 'utils/mixins';
+
+// Variables
+//------------------------------------------------------
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("navs") {
+
+    .jk-nav {
+        list-style: none;
+    }
+
+    .jk-nav-inline {
+        display: flex;
+
+        .jk-nav-item {
+
+        }
+
+        .jk-nav-link {
+            padding: 0.5rem;
+        }
+    }
+
+}
