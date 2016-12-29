@@ -2,6 +2,8 @@
 layout: post
 title:  "My Second Post"
 date:   2016-12-26 12:23:06 +0200
+
+excerpt: "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. "
 ---
 
 <figure class="jk-image">

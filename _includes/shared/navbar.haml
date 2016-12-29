@@ -1,13 +1,18 @@
-%nav.jk-wrapper.jk-navbar
+.jk-wrapper.jk-navbar
   .jk-logo-wrapper
     %a.jk-logo-main{:href => "/"}
-      %h1 {{ site.title }}
+      %svg
+        %use{"xlink:href" => "#blog-logo"}
+  .jk-page-tag
+    %h2 {{ page.navbar }}
   %button#menuTriggerButton.jk-button.jk-nav-trigger
     %span
-  %ul.jk-nav.jk-nav-inline
-    %li.jk-nav-item
-      %a.jk-nav-link{href: '#'} Link 1
-    %li.jk-nav-item
-      %a.jk-nav-link{href: '#'} Link 1
-    %li.jk-nav-item
-      %a.jk-nav-link{href: '#'} Link 1
+  #menuWrapper.jk-nav-wrapper
+    %nav.jk-wrapper
+      .jk-nav-title
+        %h4 Menu
+      %ul.jk-nav.jk-nav-inline
+        {% for link in site.data.navigations.main %}
+        %li.jk-nav-item
+          %a.jk-nav-link{href: '{{ link.url }}'} {{ link.title }}
+        {% endfor %}

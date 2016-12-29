@@ -136,12 +136,13 @@ defaults:
     values:
       layout: default
 
-  # Projects
+  # Posts
   - scope:
       path: _posts
       type: posts
     values:
-      layout: project
+      layout: post
+      navbar: Article
       permalink: /:title/
 
 

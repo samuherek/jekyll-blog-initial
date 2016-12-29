@@ -12,42 +12,37 @@
 @include exports("navbars") {
 
     .jk-navbar {
-        position: relative;
+        text-align: center;
+        @include clearfix;
     }
 
     .jk-logo-wrapper {
         position: relative;
         margin: 0 auto;
-        display: block;
-        text-align: center;
-        height: 5rem;
-
-        @include mobile-up {
-            width: 50vw;
-        }
-
-        &:after {
-            position: absolute;
-            content: '';
-            display: block;
-            background: $dark;
-            width: 3rem;
-            margin: 0 auto;
-            height: 0.05rem;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        display: inline-block;
+        float: left;
     }
 
     .jk-logo-main {
         color: $dark;
 
-        h1 {
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+
+    // The navbar page title
+
+    .jk-page-tag {
+        display: inline-block;
+
+        h2 {
             font-size: 1.7rem;
-            line-height: 5rem; // to fit the wrapper hight
             text-transform: uppercase;
             font-weight: 800;
+            margin-bottom: 0;
         }
     }
 
@@ -58,13 +53,12 @@
         border: none;
         padding: 0;
         margin: 0;
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
+        position: relative;
+        float: right;
         background: transparent;
         width: 2rem;
         height: 2rem;
-        z-index: 101;
+        z-index: 1001;
         @include subtle-transition;
 
         > span {
@@ -109,12 +103,47 @@
 
     }
 
-    .jk-navbar {
+    .jk-nav-wrapper {
+        position: fixed;
+        background: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        transform: translateX(-100%);
+        @include subtle-transition;
+
+        &.is-open {
+            transform: translateX(0);
+        }
+
+        .jk-wrapper {
+            max-width: 50rem;
+        }
+
+        .jk-nav-title {
+
+        }
 
         .jk-nav {
-            position: absolute;
-            transform: translateX(-150%);
+            flex-direction: column;
         }
+
+        .jk-nav-item {
+
+        }
+
+        .jk-nav-link {
+            display: inline-block;
+            padding: 0;
+            color: $dark;
+            font-family: "Helvetica Neue", sans-serif;
+            font-size: 1.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
     }
 
 }

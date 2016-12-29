@@ -12,7 +12,17 @@
 @include exports("excerpts") {
 
     .jk-excerpt {
+        padding: 0 2.5rem 2.5rem 2.5rem;
+        max-height: 20rem;
+        overflow: hidden;
 
+        &:nth-child(3n) {
+            padding: 0 0 2.5rem 2.5rem;
+        }
+
+        &:nth-child(3n+1) {
+            padding: 0 2.5rem 2.5rem 0;
+        }
     }
 
     .jk-excerpt-header {
@@ -21,6 +31,11 @@
 
     .jk-excerpt-title {
         color: $dark;
+    }
+
+    .jk-excerpt-meta {
+        opacity: 0.5;
+        font-size: 0.8125rem;
     }
 
 }

@@ -16,6 +16,7 @@
     .jk-footer {
         padding: 2.5rem 0;
         background: #FAFAFA;
+        margin-top: auto; // sticky footer based on flexbox
 
         p {
             margin-bottom: 0;

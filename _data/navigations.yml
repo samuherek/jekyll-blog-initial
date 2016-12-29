@@ -1,0 +1,26 @@
+
+
+# main navbar links
+main:
+  - title: "Home"
+    url: "/"
+
+  - title: "Archive"
+    url: "/archive"
+
+  - title: "About"
+    url: "/about"
+
+  - title: "Contact"
+    url: "/contact"
+
+# Footer navigation links
+footer:
+  - title: "Link 1"
+    url: "#"
+
+  - title: "Link 1"
+    url: "#"
+
+  - title: "Link 1"
+    url: "#"

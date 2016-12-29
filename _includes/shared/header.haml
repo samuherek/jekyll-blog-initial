@@ -1,2 +1,16 @@
+{% if page.navbar == 'Home' %}
+%header.home-header
+  {% haml shared/navbar.haml %}
+  %video#bgvid{:loop => "", :muted => ""}
+    -# %video#bgvid{:autoplay => "", :loop => "", :muted => ""}
+    %source{:src => "{% asset_path home-bg4.mp4 %}", :type => "video/mp4"}
+
+  .jk-wrapper.home-title
+    %h1 Travel Blog About The Life
+
+
+{% else %}
 %header
   {% haml shared/navbar.haml %}
+
+{% endif %}

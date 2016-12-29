@@ -9,7 +9,7 @@ layout: default
       %header.jk-excerpt-header
         %a.jk-excerpt-title{:href => "{{ post.url | prepend: site.baseurl }}"}
           %h3 {{ post.title }}
-        %span {{ post.date | date: "%b %-d, %Y" }}
+        %span.jk-excerpt-meta {{ post.date | date: "%b %-d, %Y" }}
       .jk-excerpt-content
         %p {{ post.excerpt }}
     {% endfor %}
